@@ -9,7 +9,8 @@ using the 'reduce' method.
 E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
-  let newArr = arr.reduce((acc,value) => acc < value ? acc = value: acc , 0);
+  let newArr = arr.reduce((acc,value) =>
+    acc < value ? acc = value: acc , 0);
   return newArr;
 };
 
@@ -62,7 +63,8 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  let newArr = Object.entries(obj).map(value => value.join(': '));
+  let newArr = Object.entries(obj).map(value =>
+    value.join(': '));
   // console.log(newArr);
   return newArr;
 };
@@ -120,7 +122,8 @@ const characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  houses = Object.values(arr).map(value => value.house);
+  houses = Object.values(arr).map(value =>
+    value.house);
   // console.log(houses);
   return houses;
 };
